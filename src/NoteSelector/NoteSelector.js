@@ -1,9 +1,10 @@
 import React from "react";
 import "./NoteSelector.css";
 
-function NoteSelector() {
+function NoteSelector({onUpdateState}) {
   function handleClick() {
     console.log("sup");
+    onUpdateState('test')
   }
   return (
     <>
@@ -13,19 +14,19 @@ function NoteSelector() {
         </div>
         <div className="select selectBlank"></div>
         <div className="select selectD" onClick={handleClick}>
-          D{" "}
+          D
         </div>
         <div className="select selectB" onClick={handleClick}>
-          B{" "}
+          B
         </div>
         <div className="select selectG" onClick={handleClick}>
-          G{" "}
+          G
         </div>
         <div className="select selectE" onClick={handleClick}>
-          E{" "}
+          E
         </div>
         <div className="select selectC" onClick={handleClick}>
-          C{" "}
+          C
         </div>
         <div className="select selectBlank" ></div>
         <div className="select selectF" onClick={handleClick}>

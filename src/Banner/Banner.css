@@ -5,17 +5,20 @@
     background-color: lightgray;
 }
 
-.note{
-
+.disp{
     background-color: lightgray;
-
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    font-size: 8em;
+    color: darkblue;
 }
 
-.note1{
-
+.scoreContain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
 }
