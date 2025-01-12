@@ -18,72 +18,28 @@ function NoteSelector({ onUpdateState, currIndex }) {
   return (
     <>
       <div className="noteSelectContain">
-        {currIndex === "null" && (
-          <div className="selectHidden" onClick={handleClick} id="A">A</div>
-        )}
-        {currIndex >= 0 && (
-          <div className="select selectA" onClick={handleClick} id="A">
-            A
-          </div>
-        )}
+
+      <div className={currIndex === "null" ? 'selectHidden' : 'select'} onClick={handleClick} id="A">A</div>
 
         {currIndex === "null" && (
           <div className="selectBlank" onClick={handleClick2}>Start</div>
         )}
-        {currIndex >= 0 && (
+        {currIndex >= 0 && currIndex !== 10 && (
           <div className="selectHidden" onClick={handleClick}>Start</div>
         )}
-
-        {currIndex === "null" && (
-          <div className="select selectD" onClick={handleClick} id="D"></div>
-        )}
-        {currIndex >= 0 && (
-          <div className="select selectD" onClick={handleClick} id="D">
-            D
-          </div>
+        {currIndex === 10 && (
+          <div className="selectBlank" onClick={handleClick2}>Again!</div>
         )}
 
-        {currIndex === "null" && (
-          <div className="selectHidden" onClick={handleClick} id="B">B</div>
-        )}
-        {currIndex >= 0 && (
-          <div className="select selectB" onClick={handleClick} id="B">
-            B
-          </div>
-        )}
-        {currIndex === "null" && (
-          <div className="selectHidden" onClick={handleClick} id="G">G</div>
-        )}
-        {currIndex >= 0 && (
-          <div className="select selectG" onClick={handleClick} id="G">
-            G
-          </div>
-        )}
-        {currIndex === "null" && (
-          <div className="selectHidden" onClick={handleClick} id="E">E</div>
-        )}
-        {currIndex >= 0 && (
-          <div className="select selectE" onClick={handleClick} id="E">
-            E
-          </div>
-        )}
-        {currIndex === "null" && (
-          <div className="selectHidden" onClick={handleClick} id="C">C</div>
-        )}
-        {currIndex >= 0 && (
-          <div className="select selectC" onClick={handleClick} id="C">
-            C
-          </div>
-        )}
-        <div className="select selectBlank"></div>
-        {currIndex === "null" && (
-          <div className="selectHidden" onClick={handleClick} id="F">F</div>
-        )}
-        {currIndex >= 0 && (
-          <div className="select selectF" onClick={handleClick} id="F">
-            F
-          </div>
-        )}
+
+      <div className={currIndex === "null" ? 'selectHidden' : 'select'} onClick={handleClick} id="D">D</div>
+      <div className={currIndex === "null" ? 'selectHidden' : 'select'} onClick={handleClick} id="B">B</div>
+      <div className={currIndex === "null" ? 'selectHidden' : 'select'} onClick={handleClick} id="G">G</div>
+      <div className={currIndex === "null" ? 'selectHidden' : 'select'} onClick={handleClick} id="E">E</div>
+      <div className={currIndex === "null" ? 'selectHidden' : 'select'} onClick={handleClick} id="C">C</div>
+      <div className="select selectBlank"></div>
+      <div className={currIndex === "null" ? 'selectHidden' : 'select'} onClick={handleClick} id="F">F</div>
+
       </div>
     </>
   );

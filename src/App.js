@@ -11,6 +11,7 @@ function App() {
   const [currNum, setCurrNum] = useState('null');
   const [shuffArr, setShuffArr] = useState([]);
   const [userSelect, setUserSelect] = useState('');
+  const [startOver, setStartOver] = useState(false);
 
 
 
@@ -18,9 +19,8 @@ function App() {
     let sevensArray = ["C7", "G7", "D7", "A7", "E7", "B7", "F#7"];
     shuffle(sevensArray)
     setShuffArr(sevensArray)
-  }, []);
-
-  console.log(shuffArr)
+    setStartOver(false)
+  }, [startOver]);
 
   function shuffle(array) {
     let currentIndex = array.length;
@@ -36,14 +36,13 @@ function App() {
 
 
   function handleUpdateState(prop1, prop2) {
-    console.log(prop2)
     if(prop2 === 0){
       setCurrNum(0)
       setNoteBanner(shuffArr[0])
       return;
     }
 
-    if(compare(prop1, noteBanner)){
+    if(compare(prop1, noteBanner) && currNum !== 6){
       setScoreboard('correct!')
       setCurrNum(currNum + 1);
       setNoteBanner(shuffArr[currNum + 1])
@@ -51,7 +50,13 @@ function App() {
       setScoreboard('try again!')
     }
 
-    console.log(prop1);
+    if(compare(prop1, noteBanner) && currNum === 6){
+      setScoreboard('correct!')
+      setCurrNum(10)
+      // setCurrNum('null');
+      // setScoreboard('-')
+      // setStartOver(true);
+    }
 
 
   }
