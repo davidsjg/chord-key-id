@@ -8,7 +8,7 @@ function App() {
   const [clickCounter, setClickCounter] = useState(0);
   const [noteBanner, setNoteBanner] = useState();
   const [scoreboard, setScoreboard] = useState("-");
-  const [currNum, setCurrNum] = useState(0);
+  const [currNum, setCurrNum] = useState('null');
   const [shuffArr, setShuffArr] = useState([]);
   const [userSelect, setUserSelect] = useState('');
 
@@ -18,9 +18,9 @@ function App() {
     let sevensArray = ["C7", "G7", "D7", "A7", "E7", "B7", "F#7"];
     shuffle(sevensArray)
     setShuffArr(sevensArray)
-    setNoteBanner(sevensArray[0])
   }, []);
 
+  console.log(shuffArr)
 
   function shuffle(array) {
     let currentIndex = array.length;
@@ -36,6 +36,12 @@ function App() {
 
 
   function handleUpdateState(prop1, prop2) {
+    console.log(prop2)
+    if(prop2 === 0){
+      setCurrNum(0)
+      setNoteBanner(shuffArr[0])
+      return;
+    }
     console.log(prop1);
     setScoreboard('test')
     setCurrNum(currNum + 1);

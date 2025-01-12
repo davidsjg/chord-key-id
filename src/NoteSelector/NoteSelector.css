@@ -16,8 +16,27 @@
     color: darkblue;
 }
 
+.selectHidden{
+    background-color: lightblue;
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    color: lightblue;
+}
+
 .selectBlank{
-    background-color: white;
+    background-color: lightblue;
+    margin: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    color: darkblue;
+    overflow: scroll;
 }
 
 
@@ -28,4 +47,5 @@
     box-shadow: 0 0 3px black;
     transform: scaleX(.99);
     transform: scaleY(.99);
+    font-size: xx-large;
 }
