@@ -42,10 +42,18 @@ function App() {
       setNoteBanner(shuffArr[0])
       return;
     }
+
+    if(compare(prop1, noteBanner)){
+      setScoreboard('correct!')
+      setCurrNum(currNum + 1);
+      setNoteBanner(shuffArr[currNum + 1])
+    } else {
+      setScoreboard('try again!')
+    }
+
     console.log(prop1);
-    setScoreboard('test')
-    setCurrNum(currNum + 1);
-    setNoteBanner(shuffArr[currNum + 1])
+
+
   }
 
 

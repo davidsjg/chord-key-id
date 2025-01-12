@@ -26,14 +26,14 @@ function NoteSelector({ onUpdateState, currIndex }) {
             A
           </div>
         )}
+
         {currIndex === "null" && (
-          <div className="selectBlank" onClick={handleClick2}>
-            Start
-          </div>
+          <div className="selectBlank" onClick={handleClick2}>Start</div>
         )}
         {currIndex >= 0 && (
-          <div className="selectHidden" onClick={handleClick}>D</div>
+          <div className="selectHidden" onClick={handleClick}>Start</div>
         )}
+
         {currIndex === "null" && (
           <div className="select selectD" onClick={handleClick} id="D"></div>
         )}
@@ -42,6 +42,7 @@ function NoteSelector({ onUpdateState, currIndex }) {
             D
           </div>
         )}
+
         {currIndex === "null" && (
           <div className="selectHidden" onClick={handleClick} id="B">B</div>
         )}
