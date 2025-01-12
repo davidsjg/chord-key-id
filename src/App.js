@@ -2,6 +2,7 @@ import "./App.css";
 import Banner from "./Banner/Banner";
 import NoteSelector from "./NoteSelector/NoteSelector";
 import { useState, useEffect } from "react";
+import compare from "./checkScore";
 
 function App() {
   const [clickCounter, setClickCounter] = useState(0);
@@ -9,6 +10,7 @@ function App() {
   const [scoreboard, setScoreboard] = useState("-");
   const [currNum, setCurrNum] = useState(0);
   const [shuffArr, setShuffArr] = useState([]);
+  const [userSelect, setUserSelect] = useState('');
 
 
 
@@ -19,8 +21,6 @@ function App() {
     setNoteBanner(sevensArray[0])
   }, []);
 
-  console.log(shuffArr)
-  console.log(shuffArr[0])
 
   function shuffle(array) {
     let currentIndex = array.length;
@@ -35,13 +35,11 @@ function App() {
   }
 
 
-  function handleUpdateState() {
-    console.log("sup");
+  function handleUpdateState(prop1, prop2) {
+    console.log(prop1);
     setScoreboard('test')
     setCurrNum(currNum + 1);
-    let currDisp = shuffArr[currNum];
-    console.log(currDisp)
-    setNoteBanner(shuffArr[currNum])
+    setNoteBanner(shuffArr[currNum + 1])
   }
 
 
