@@ -1,7 +1,7 @@
 import React from "react";
 import "./NoteSelector.css";
 
-function NoteSelector({onUpdateState}) {
+function NoteSelector({onUpdateState, currIndex}) {
   function handleClick() {
     console.log("sup");
     onUpdateState('test')
@@ -12,7 +12,15 @@ function NoteSelector({onUpdateState}) {
         <div className="select selectA" onClick={handleClick}>
           A
         </div>
-        <div className="select selectBlank"></div>
+        {currIndex === 0 && 
+      
+             <div className="select selectBlank">Start</div>   
+        }
+        {currIndex > 0 && 
+        
+             <div className="select selectBlank"></div>   
+     }
+
         <div className="select selectD" onClick={handleClick}>
           D
         </div>
