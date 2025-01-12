@@ -1,0 +1,19 @@
+.noteSelectContain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    height: 400px;
+}
+
+.select{
+    background-color: lightblue;
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectBlank{
+    background-color: white;
+}
