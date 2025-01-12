@@ -17,3 +17,11 @@
 .selectBlank{
     background-color: white;
 }
+
+.select:active{
+    background-color: rgb(252, 214, 214);
+    background-color: #a49bb6;
+    box-shadow: 0 0 3px black;
+    transform: scaleX(.99);
+    transform: scaleY(.99);
+}
