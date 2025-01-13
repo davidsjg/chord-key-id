@@ -53,8 +53,13 @@ function App() {
 
     if(compare(prop1, noteBanner) && currNum !== 6){
       setScoreboard('correct!')
-      setCurrNum(currNum + 1);
-      setNoteBanner(shuffArr[currNum + 1])
+      setNoteBanner('-')
+      setTimeout(() => {
+        setCurrNum(currNum + 1);
+        setNoteBanner(shuffArr[currNum + 1])
+        setScoreboard('-')
+      }, 1000); // 1000 milliseconds = 1 second
+
     } else if (currNum === 6) {
       return;
     } else {
