@@ -1,12 +1,8 @@
 .bannerContain{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height:240px;
+    height:220px;
     background-color: lightgray;
-}
-
-.dispNoteContain{
-
 }
 
 .disp{
@@ -26,12 +22,15 @@
     align-items: center;
     justify-content: center;
     background-color: lightgray;
+    color: lightgray;
+    font-size: xx-large;
 }
 
 .scoreHidden{
-
+    background-color: lightgray;
 
 }
 .score{
-
+    color: darkblue;
+    font-size: xx-large;
 }

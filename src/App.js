@@ -36,6 +36,15 @@ function App() {
 
 
   function handleUpdateState(prop1, prop2) {
+
+    if(compare(prop1, noteBanner) && currNum === 6){
+      setScoreboard('correct!')
+      setCurrNum(10)
+
+      // setCurrNum('null');
+      // setScoreboard('-')
+       setStartOver(true);
+    }
     if(prop2 === 0){
       setCurrNum(0)
       setNoteBanner(shuffArr[0])
@@ -46,19 +55,11 @@ function App() {
       setScoreboard('correct!')
       setCurrNum(currNum + 1);
       setNoteBanner(shuffArr[currNum + 1])
+    } else if (currNum === 6) {
+      return;
     } else {
       setScoreboard('try again!')
     }
-
-    if(compare(prop1, noteBanner) && currNum === 6){
-      setScoreboard('correct!')
-      setCurrNum(10)
-      // setCurrNum('null');
-      // setScoreboard('-')
-      // setStartOver(true);
-    }
-
-
   }
 
 
