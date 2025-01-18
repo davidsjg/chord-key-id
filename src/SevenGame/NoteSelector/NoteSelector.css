@@ -24,6 +24,15 @@
     font-size: xx-large;
     color: lightblue;
 }
+.selectHidden1{
+    background-color: white;
+    margin: 1px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 127px; 
+    font-size: xx-large;
+    color: white;
+}
 
 .selectBlank{
     background-color: lightblue;
@@ -45,5 +54,4 @@
 
 .select:hover, .select:active, .select:focus {
     background-color: #a49bb6;
-
   }

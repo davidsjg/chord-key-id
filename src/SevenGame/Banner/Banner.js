@@ -3,7 +3,6 @@ import { useState } from "react";
 import "./Banner.css";
 
 function Banner({ scoreboard, displayChord1 }) {
-  //console.log(displayChord1)
 
   return (
     <>
