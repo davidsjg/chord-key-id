@@ -1,0 +1,42 @@
+.dispNote{
+/*
+    border-bottom: 1px;
+    border: 1px;
+    border-bottom-style: solid;
+
+*/
+    text-decoration: line-through;
+    font-size: x-large;
+
+}
+
+.note5{
+
+
+}
+
+.blankNote{
+    color: lightblue;
+
+}
+
+.selectedNote{
+    text-decoration: line-through;
+    font-size: 4.2em;
+    margin-top: -25px;
+    margin-bottom: -25px;
+}
+
+.selectedOdd{
+
+    font-size: 4.2em;
+    margin-top: -25px;
+    margin-bottom: -25px;
+
+}
+
+.zeroNote{
+
+    border-bottom: 5px solid black;
+
+}

@@ -1,0 +1,30 @@
+.mainContain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.leftHeader{
+
+    align-items: center;
+    justify-content: center;
+    background-color: lightskyblue;
+    padding: 80px 80px;
+    margin: 20px 20px;
+    width: 40px;
+}
+.rightHeader{
+
+    align-items: center;
+    justify-content: center;
+    background-color: lightskyblue;
+    padding: 80px 80px;
+    margin: 20px 20px;
+    width: 40px;
+}
+
+.rightHeader span{
+    
+}

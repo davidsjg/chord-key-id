@@ -9,41 +9,41 @@ function Header() {
     <div className={styles["mainContain"]}>
       <div className={styles["leftHeader"]}>
         <div className={styles["navMenu"]}>
-          <a>
+          
             <Link
               to="/about"
               style={{ color: "black", textDecoration: "none" }}
             >
-              <span style={{ marginRight: -9 }}>About Me</span>
+              <span style={{ marginRight: -9 }}></span>
             </Link>
-          </a>
+     
         </div>
       </div>
 
       <div className={styles["centerHeader"]}>
         <div className={styles["centerHeader2"]}>
           <div className={styles["navMenu"]}>
-            <a>
+       
               <Link to="/" style={{ color: "black", textDecoration: "none" }}>
                 <span style={{ fontSize: "larger" }}>
                   LEARN MUSIC
                 </span>
               </Link>
-            </a>
+      
           </div>
         </div>
       </div>
 
       <div className={styles["rightHeader"]}>
         <div className={styles["navMenu"]}>
-          <a>
+   
             <Link
-              to="/portfolio"
+              to="/about"
               style={{ color: "black", textDecoration: "none" }}
             >
-              <span>Portfolio</span>
+              <span></span>
             </Link>
-          </a>
+    
         </div>
       </div>
     </div>

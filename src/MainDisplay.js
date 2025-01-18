@@ -4,7 +4,7 @@ import SevenGame from "./SevenGame/SevenGame";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 
-function App2() {
+function MainDisplay() {
   return (
     <>
       <div >
@@ -15,4 +15,4 @@ function App2() {
   );
 }
 
-export default App2;
+export default MainDisplay;

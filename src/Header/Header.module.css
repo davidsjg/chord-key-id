@@ -102,6 +102,7 @@
     font-size: 13px;
     letter-spacing: 1.42px;
     position: relative;
+    background-color: white;
   }
   .navMenu a span::after {
     content: "";

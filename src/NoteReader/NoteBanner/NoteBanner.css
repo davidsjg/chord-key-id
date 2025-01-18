@@ -1,0 +1,44 @@
+.bannerContain2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height:250px;
+    background-color: lightgray;
+}
+
+.disp{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: darkblue;
+}
+
+.note1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    color: black;
+}
+
+
+.scoreContain{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    color: lightgray;
+    font-size: xx-large;
+}
+
+.scoreHidden{
+    background-color: lightgray;
+
+}
+.score{
+    color: darkblue;
+    font-size: xx-large;
+}
