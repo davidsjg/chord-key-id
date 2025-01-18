@@ -4,7 +4,7 @@ import './DispNote.css';
 
 function DispNote({ number }) {
 
-   let temp = 8;
+   let temp = 10;
 
    if((number === 0 && temp === number) || (number === 2 && temp === number)  ){
     return (
@@ -21,7 +21,7 @@ function DispNote({ number }) {
         return (
             <>
             <div className={`selectedNote allNote note` + number}>
-                -O-
+                {"  "}O{"  "}  
             </div>
          
             </>
@@ -32,7 +32,7 @@ function DispNote({ number }) {
         return (
             <>
             <div className={`dispNote allNote note` + number}>
-                ---------
+            {"                   "}
             </div>
          
             </>

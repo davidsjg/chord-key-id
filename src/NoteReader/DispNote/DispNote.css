@@ -7,7 +7,8 @@
 */
     text-decoration: line-through;
     font-size: x-large;
-
+    white-space-collapse: preserve;
+    text-decoration-thickness: 7px;
 }
 
 .note5{
@@ -25,6 +26,7 @@
     font-size: 4.2em;
     margin-top: -25px;
     margin-bottom: -25px;
+    white-space-collapse: preserve;
 }
 
 .selectedOdd{
