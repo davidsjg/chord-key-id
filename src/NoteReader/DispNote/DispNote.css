@@ -6,7 +6,7 @@
 
 */
     text-decoration: line-through;
-    font-size: x-large;
+    font-size: large;
     white-space-collapse: preserve;
     text-decoration-thickness: 7px;
 }
@@ -18,12 +18,12 @@
 
 .blankNote{
     color: lightblue;
-
+    display: none;
 }
 
 .selectedNote{
     text-decoration: line-through;
-    font-size: 4.2em;
+    font-size: 2.1em;
     margin-top: -25px;
     margin-bottom: -25px;
     white-space-collapse: preserve;
@@ -31,7 +31,7 @@
 
 .selectedOdd{
 
-    font-size: 4.2em;
+    font-size: 2.1em;
     margin-top: -25px;
     margin-bottom: -25px;
 
@@ -40,5 +40,12 @@
 .zeroNote{
 
     border-bottom: 5px solid black;
+    margin-bottom: 8px;
+
+}
+.sixteenNote{
+
+    border-top: 5px solid black;
+    margin-top: 8px;
 
 }

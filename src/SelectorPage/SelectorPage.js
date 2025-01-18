@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import styles from "./SelectorPage.module.css";
+import Header from "../Header/Header";
 
 function SelectorPage() {
   return (
     <>
+     <Header/>
       <div className={styles["mainContain"]}>
         <div className={styles["leftHeader"]}>
           <Link to="/noteReader" style={{ color: "black", textDecoration: "none" }}>

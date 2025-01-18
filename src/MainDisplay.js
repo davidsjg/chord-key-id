@@ -8,7 +8,7 @@ function MainDisplay() {
   return (
     <>
       <div >
-        <Header />
+       
         <Outlet />
       </div>
     </>
