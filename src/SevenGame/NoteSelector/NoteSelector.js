@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./NoteSelector.css";
 
 function NoteSelector({ onUpdateState, currIndex }) {
@@ -37,7 +38,17 @@ function NoteSelector({ onUpdateState, currIndex }) {
       <div className={currIndex === "null" || currIndex === 10 ? 'selectHidden' : 'select'} onClick={handleClick} id="G">G</div>
       <div className={currIndex === "null" || currIndex === 10 ? 'selectHidden' : 'select'} onClick={handleClick} id="E">E</div>
       <div className={currIndex === "null" || currIndex === 10 ? 'selectHidden' : 'select'} onClick={handleClick} id="C">C</div>
-      <div className="selectHidden1">Hold</div>
+      <div className="homeButton">        
+        <div >
+          
+            <Link
+              to="/"
+            >
+              <span style={{ marginRight: -9 }}>Home</span>
+            </Link>
+     
+        </div></div>
+
       <div className={currIndex === "null" || currIndex === 10 ? 'selectHidden' : 'select'} onClick={handleClick} id="F">F</div>
 
       </div>

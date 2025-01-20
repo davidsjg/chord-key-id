@@ -10,14 +10,18 @@
     align-items: center;
     justify-content: center;
     background-color: lightskyblue;
-    padding: 40px 60px;
-    margin: 30px 20px;
-    width: 40px;
+    margin-top: 10px;
     border-radius: 5px;
 }
 
 .bothHeader:hover{
-    background-color: green;
+    background-color: lightgreen;
+    transform: scale(1.03);
+}
+
+.bothHeader:active{
+    background-color: lightgreen;
+    transform: scale(.98);
 }
 
 
@@ -29,9 +33,12 @@
     font-size: xx-large;
     color: white;
     text-decoration: none;
+    padding: 50px;
+    width: 60px;
 }
+
 
 .bothHeader a:hover{
-    transform: scale(1.01);
 
 }
+
