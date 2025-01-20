@@ -1,0 +1,37 @@
+.mainContain3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bothHeader{
+    align-items: center;
+    justify-content: center;
+    background-color: lightskyblue;
+    padding: 40px 60px;
+    margin: 30px 20px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.bothHeader:hover{
+    background-color: green;
+}
+
+
+.bothHeader a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    color: white;
+    text-decoration: none;
+}
+
+.bothHeader a:hover{
+    transform: scale(1.01);
+
+}

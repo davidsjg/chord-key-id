@@ -1,47 +1,39 @@
 .dispNote{
-/*
-    border-bottom: 1px;
-    border: 1px;
-    border-bottom-style: solid;
-
-*/
     text-decoration: line-through;
     font-size: large;
     white-space-collapse: preserve;
-    text-decoration-thickness: 7px;
-}
-
-.note5{
-
+    text-decoration-thickness: 3px;
 
 }
+
 
 .blankNote{
     color: lightblue;
     display: none;
+
 }
 
 .selectedNote{
     text-decoration: line-through;
     font-size: 2.1em;
-    margin-top: -25px;
-    margin-bottom: -25px;
     white-space-collapse: preserve;
+    margin: -9px 0px;
 }
 
 .selectedOdd{
 
     font-size: 2.1em;
-    margin-top: -25px;
-    margin-bottom: -25px;
+    margin: -17px 0px;
 
 }
 
 .zeroNote{
 
-    border-bottom: 5px solid black;
-    margin-bottom: 8px;
-
+    border-bottom: 1px solid black;
+    text-decoration: line-through;
+    font-size: 2.1em;
+    white-space-collapse: preserve;
+    text-decoration-thickness: 1px;
 }
 .sixteenNote{
 

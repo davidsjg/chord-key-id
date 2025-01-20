@@ -2,19 +2,19 @@ import React from "react";
 import "./DispNote.css";
 
 function DispNote({ number }) {
-  let temp = 16;
+  let temp = 12;
 
   if (number === 0 && temp === number) {
     return (
       <>
-        <div className={`selectedNote zeroNote allNote note` + number}>O</div>
+        <div className={`zeroNote allNote note` + number}>{"  "}O{"  "}</div>
       </>
     );
   }
   if ((number === 2 && temp === number) || (number === 14 && temp === number)) {
     return (
       <>
-        <div className={`selectedNote allNote note` + number}>O</div>
+        <div className={`selectedNote allNote note` + number}>{"  "}O{"  "}</div>
       </>
     );
   }
@@ -23,7 +23,7 @@ function DispNote({ number }) {
     return (
       <>
         <div className={`selectedNote allNote note` + number}>
-          {"  "}O{"  "}
+          {"     "}O{"     "}
         </div>
       </>
     );
@@ -33,7 +33,7 @@ function DispNote({ number }) {
     return (
       <>
         <div className={`dispNote allNote note` + number}>
-          {"                   "}
+          {"                     "}
         </div>
       </>
     );
@@ -59,7 +59,7 @@ function DispNote({ number }) {
 
   return (
     <>
-      <div className={`blankNote note` + number}></div>
+      <div className={`blankNote note` + number}>{"            "}</div>
     </>
   );
 }
