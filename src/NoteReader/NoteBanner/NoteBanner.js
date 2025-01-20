@@ -12,9 +12,7 @@ function NoteBanner({ scoreboard, displayChord1 }) {
         <div className="note1">
           {masterArr.map((note) => {
             return (
-              <>
                 <DispNote key={note} number={note} />
-              </>
             );
           })}
         </div>

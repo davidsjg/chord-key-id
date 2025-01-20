@@ -2,7 +2,7 @@ import React from "react";
 import "./DispNote.css";
 
 function DispNote({ number }) {
-  let temp = 12;
+  let temp = 8;
 
   if (number === 0 && temp === number) {
     return (
