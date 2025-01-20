@@ -15,12 +15,12 @@
 }
 
 .bothHeader:hover{
-    background-color: lightgreen;
+    background-color: lightsalmon;
     transform: scale(1.03);
 }
 
 .bothHeader:active{
-    background-color: lightgreen;
+    background-color: lightsalmon;
     transform: scale(.98);
 }
 

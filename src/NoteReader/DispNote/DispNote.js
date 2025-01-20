@@ -1,8 +1,8 @@
 import React from "react";
 import "./DispNote.css";
 
-function DispNote({ number }) {
-  let temp = 8;
+function DispNote({ number, currNum }) {
+  let temp = currNum;
 
   if (number === 0 && temp === number) {
     return (
