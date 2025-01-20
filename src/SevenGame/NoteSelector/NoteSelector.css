@@ -42,6 +42,7 @@
     line-height: 127px; 
     font-size: xx-large;
     color: darkblue;
+    background-color: lightsalmon;
 }
 .selectBlank1{
     background-color: lightblue;
@@ -58,17 +59,19 @@
 
 
 .homeButton{
-    background-color: lightgreen;
+    background-color: lightsalmon;
 }
 
 .homeButton a{
     margin: 1px;
     text-align: center;
     vertical-align: middle;
-    margin-left: 15px;
     line-height: 127px; 
     font-size: xx-large;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .homeButton span{
 color: darkblue;
