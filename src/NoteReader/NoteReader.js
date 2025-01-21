@@ -11,6 +11,7 @@ function NoteReader() {
   const [noteBanner, setNoteBanner] = useState();
   const [scoreboard, setScoreboard] = useState("-");
   const [currNum, setCurrNum] = useState("null");
+  const [currStaff, setCurrStaff] = useState("null");
   const [shuffArr, setShuffArr] = useState([]);
   const [userSelect, setUserSelect] = useState("");
   const [startOver, setStartOver] = useState(false);
@@ -43,10 +44,15 @@ function NoteReader() {
     console.log(shuffArr)
     console.log(prop1)
     console.log(prop2)
+
     if (prop2 === 0) {
-      setCurrNum(shuffArr[0]);
+      setCurrNum(0);
+      setCurrStaff(shuffArr[0]);
       return;
+    } else if (prop2 > 0) {
+      setCurrNum(currNum+1)
     }
+    setCurrStaff(shuffArr[currNum])
 
   }
 
@@ -54,8 +60,8 @@ function NoteReader() {
   return (
     <>
       <div className="mainAppContain">
-        <NoteBanner currNum={currNum}  />
-        <NoteSelector onUpdateState={handleUpdateState2} currIndex={currNum} />
+        <NoteBanner currNum={currStaff}  />
+        <NoteSelector onUpdateState={handleUpdateState2} currIndex={currStaff} />
       </div>
     </>
   );

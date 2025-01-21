@@ -9,7 +9,7 @@ function NoteSelector({ onUpdateState, currIndex }) {
     }
     let userPick = e.target.id;
     let testProp2 = "test2";
-    onUpdateState(userPick, testProp2);
+    onUpdateState(userPick, currIndex);
   }
   function handleClick2(e) {
     let userPick = e.target.id;

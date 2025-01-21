@@ -21,7 +21,7 @@ function NoteBanner({ scoreboard, currNum }) {
       </div>
       <div className="scoreContain">
         <div className={scoreboard === "-" ? "scoreHidden" : "score"}>
-          {scoreboard}fasdf
+          {scoreboard}scoreboard
         </div>
       </div>
     </>
